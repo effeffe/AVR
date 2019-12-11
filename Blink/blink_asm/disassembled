@@ -1,0 +1,23 @@
+
+program.hex:     formato del file ihex
+
+
+Disassemblamento della sezione .sec1:
+
+00000000 <.sec1>:
+   0:	00 c0       	rjmp	.+0      	;  0x2
+   2:	b8 9a       	sbi	0x17, 0	; 23
+   4:	b0 99       	sbic	0x16, 0	; 22
+   6:	c0 98       	cbi	0x18, 0	; 24
+   8:	b0 9b       	sbis	0x16, 0	; 22
+   a:	c0 9a       	sbi	0x18, 0	; 24
+   c:	40 e2       	ldi	r20, 0x20	; 32
+   e:	30 e4       	ldi	r19, 0x40	; 64
+  10:	20 e8       	ldi	r18, 0x80	; 128
+  12:	2a 95       	dec	r18
+  14:	f1 f7       	brne	.-4      	;  0x12
+  16:	3a 95       	dec	r19
+  18:	d9 f7       	brne	.-10     	;  0x10
+  1a:	4a 95       	dec	r20
+  1c:	c1 f7       	brne	.-16     	;  0xe
+  1e:	f2 cf       	rjmp	.-28     	;  0x4
