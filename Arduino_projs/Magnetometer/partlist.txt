@@ -1,0 +1,4 @@
+This is actually set for the TI DRV5055A1 magnetometer, but can be modfied to work with others.
+
+It should use an Low-Pass (RC) filter as well, which still has to be implemented.
+Please note that the DRV5055 requires a capacitor of 0.1uF between Vcc and GND.
