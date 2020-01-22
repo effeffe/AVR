@@ -2,8 +2,8 @@
  *  ¢ Filippo Falezza 2018-2020
  *  CC-BY-SA 4.0
  *
- *  Note: Arduino has 10bit resolution, hence 1:1024=x=5000mV
- *  This means that we can resolve up to 4.88mV=5mV
+ *  Note: Arduino Uno has ADC 10bit resolution, hence 1:1024=x=5000mV
+ *  This means that we can resolve up to 4.88mV=>5mV
  *  
  *  Please adjust the Vcc and Vsens_1 according to your setup
  *  Here, Vcc=5.0V, and Vsens_1 = 100mV
